@@ -23,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if (SharedPrefManager.getInstance(this).isLoggedIn()) {
+            finish();
+            startActivity(new Intent(this, Dash.class));
+            return;
+        }
+
         editTextUsername = (EditText) findViewById(R.id.editTextUsername);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
 
@@ -62,14 +68,14 @@ public class MainActivity extends AppCompatActivity {
 
 //            ProgressBar progressBar;
 //
-//            @Override
+            @Override
             protected void onPreExecute() {
                 super.onPreExecute();
 //                progressBar = (ProgressBar) findViewById(R.id.progressBar);
 //                progressBar.setVisibility(View.VISIBLE);
             }
 
-//            @Override
+            @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
 //                progressBar.setVisibility(View.GONE);
