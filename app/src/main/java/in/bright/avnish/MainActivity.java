@@ -25,7 +25,12 @@ public class MainActivity extends AppCompatActivity {
 
         if (SharedPrefManager.getInstance(this).isLoggedIn()) {
             finish();
-            startActivity(new Intent(this, Dash.class));
+
+            User user = SharedPrefManager.getInstance(this).getUser();
+
+            int l=user.getLevel();
+            if(l==0)      startActivity(new Intent(getApplicationContext(), Admin.class));
+            else          startActivity(new Intent(getApplicationContext(), Dash.class));
             return;
         }
 
@@ -96,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                         User user = new User(
    //                             userJson.getInt("id"),
                                 userJson.getString("username"),
-                                userJson.getString("level")
+                                userJson.getInt("level")
                         );
 
                         //storing the user in shared preferences
@@ -104,7 +109,10 @@ public class MainActivity extends AppCompatActivity {
 
                         //starting the profile activity
                         finish();
-                        startActivity(new Intent(getApplicationContext(), Dash.class));
+
+                        int l= user.getLevel();
+                        if(l==0)      startActivity(new Intent(getApplicationContext(), Admin.class));
+                        else          startActivity(new Intent(getApplicationContext(), Dash.class));
                     } else {
                         Toast.makeText(getApplicationContext(), "Invalid username or password", Toast.LENGTH_SHORT).show();
                     }

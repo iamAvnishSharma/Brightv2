@@ -36,7 +36,7 @@ public class SharedPrefManager {
         SharedPreferences.Editor editor = sharedPreferences.edit();
       //  editor.putInt(KEY_ID, user.getId());
         editor.putString(KEY_USERNAME, user.getUsername());
-        editor.putString(KEY_LEVEL, user.getLevel());
+        editor.putInt(KEY_LEVEL, user.getLevel());
         editor.apply();
     }
 
@@ -52,7 +52,7 @@ public class SharedPrefManager {
         return new User(
            //     sharedPreferences.getInt(KEY_ID, -1),
                 sharedPreferences.getString(KEY_USERNAME, null),
-                sharedPreferences.getString(KEY_LEVEL, null)
+                sharedPreferences.getInt(KEY_LEVEL, -1)
              //   sharedPreferences.getString(KEY_GENDER, null)
         );
     }
