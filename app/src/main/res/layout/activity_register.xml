@@ -50,7 +50,7 @@
             android:id="@+id/radioButtonAdmin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Admin" />
+            android:text="CR" />
 
         <RadioButton
             android:id="@+id/radioButtonStudent"

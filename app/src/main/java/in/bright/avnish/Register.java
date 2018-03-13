@@ -51,8 +51,8 @@ public class Register extends AppCompatActivity {
 //        final String gender = ((RadioButton) findViewById(radioGroupGender.getCheckedRadioButtonId())).getText().toString();
         final String acc;
 
-        if(select.equals("Admin"))
-            acc= "0";
+        if(select.equals("CR"))
+            acc= "2";
         else acc = "1";
         //first we will do the validations
 

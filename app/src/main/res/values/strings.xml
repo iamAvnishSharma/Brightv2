@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Bright</string>
+    <string name="title_activity_feeds">Feeds</string>
 </resources>
