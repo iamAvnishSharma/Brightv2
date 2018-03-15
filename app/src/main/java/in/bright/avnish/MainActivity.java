@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                         User user = new User(
    //                             userJson.getInt("id"),
                                 userJson.getString("username"),
+                                userJson.getString("cld"),
                                 userJson.getInt("level")
                         );
 

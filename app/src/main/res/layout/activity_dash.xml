@@ -7,16 +7,6 @@
     tools:context="in.bright.avnish.Dash"
     tools:layout_editor_absoluteY="81dp">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="204dp"
-        android:text="Dashboard"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 
     <Button
         android:id="@+id/buttonLogout"
@@ -27,5 +17,25 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFeeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="118dp"
+        android:text="Feeds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAddFeeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="ADD FEEDS"
+        app:layout_constraintStart_toStartOf="@+id/buttonFeeds"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFeeds"
+        android:visibility="invisible"/>
 
 </android.support.constraint.ConstraintLayout>

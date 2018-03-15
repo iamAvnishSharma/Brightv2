@@ -4,9 +4,12 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class Dash extends AppCompatActivity {
 
+
+    Button addf;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +20,30 @@ public class Dash extends AppCompatActivity {
             startActivity(new Intent(this, MainActivity.class));
         }
 
-        User user = SharedPrefManager.getInstance(this).getUser();
+
+        findViewById(R.id.buttonFeeds).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(getApplicationContext(), Feeds.class));
+            }
+        });
+
+        addf =findViewById(R.id.buttonAddFeeds);
+
+                addf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(getApplicationContext(), AddFeeds.class));
+            }
+        });
+
+        User user = SharedPrefManager.getInstance(getApplicationContext()).getUser();
+        if(user.getLevel()==2)
+        {
+            addf.setVisibility(View.VISIBLE); //SHOW the button
+        }
 
 
         findViewById(R.id.buttonLogout).setOnClickListener(new View.OnClickListener() {
@@ -27,7 +53,6 @@ public class Dash extends AppCompatActivity {
                 SharedPrefManager.getInstance(getApplicationContext()).logout();
             }
         });
-
 
 
     }

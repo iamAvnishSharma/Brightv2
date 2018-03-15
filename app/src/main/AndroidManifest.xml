@@ -24,7 +24,8 @@
         <activity android:name=".Dash" />
         <activity android:name=".Admin" />
         <activity android:name=".Register" />
-        <activity android:name=".Feeds"></activity>
+        <activity android:name=".Feeds" />
+        <activity android:name=".AddFeeds"></activity>
     </application>
 
 </manifest>

@@ -6,10 +6,12 @@ package in.bright.avnish;
 
 public class User {
     private String username;
+    private String cld;
     private Integer level;
 
-    public User(String username, Integer level) {
+    public User(String username,String cld, Integer level) {
         this.username = username;
+        this.cld=cld;
         this.level = level;
     }
 
@@ -17,9 +19,15 @@ public class User {
         return username;
     }
 
+    public String getCld() {
+        return cld;
+    }
+
     public Integer getLevel() {
         return level;
     }
+
+
 
 
 }

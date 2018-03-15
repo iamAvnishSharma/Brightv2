@@ -39,6 +39,8 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.FeedViewHolder
         holder.textViewFeed.setText(product.getFeed());
     }
 
+
+
     @Override
     public int getItemCount() {
         return feedList.size();

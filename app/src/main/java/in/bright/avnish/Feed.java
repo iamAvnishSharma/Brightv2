@@ -7,19 +7,13 @@ package in.bright.avnish;
 public class Feed {
 
     private String feed;
-    private String cld;
 
-    public Feed( String feed, String cld) {
+    public Feed( String feed) {
         this.feed = feed;
-        this.cld = cld;
     }
 
     public String getFeed() {
         return feed;
-    }
-
-    public String getCld() {
-        return cld;
     }
 
 }
