@@ -22,20 +22,39 @@
         android:id="@+id/buttonFeeds"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:layout_marginTop="118dp"
         android:text="Feeds"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAddFeeds"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonAddFeeds"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
+        android:layout_marginEnd="36dp"
         android:text="ADD FEEDS"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonFeeds"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Notes"
         app:layout_constraintStart_toStartOf="@+id/buttonFeeds"
-        app:layout_constraintTop_toBottomOf="@+id/buttonFeeds"
-        android:visibility="invisible"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonFeeds" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Upcoming Events"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNotes" />
 
 </android.support.constraint.ConstraintLayout>
