@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/clouds"
     tools:context="in.bright.avnish.Register"
-    tools:layout_editor_absoluteY="81dp">
+    tools:layout_editor_absoluteY="25dp">
 
 
     <EditText
@@ -26,7 +27,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="74dp"
-        android:hint="CLD"
+        android:hint="Class Code"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/progressBar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +39,7 @@
         android:id="@+id/editTextPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="26dp"
         android:fontFamily="sans-serif"
         android:hint="Password"
         android:inputType="textPassword"
@@ -51,8 +52,8 @@
         android:id="@+id/radioLevel"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="23dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="21dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/progressBar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,7 +81,7 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="39dp"
+        android:layout_marginBottom="41dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,7 +92,8 @@
         android:id="@+id/buttonRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="55dp"
+        android:layout_marginBottom="53dp"
+        android:background="@drawable/button2"
         android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
