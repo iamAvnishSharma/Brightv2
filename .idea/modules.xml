@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:\Users\ABHISHEK NIMBHORKAR\AndroidStudioProjects\bright\Bright.iml" filepath="C:\Users\ABHISHEK NIMBHORKAR\AndroidStudioProjects\bright\Bright.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bright.iml" filepath="$PROJECT_DIR$/Bright.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/bright.iml" filepath="$PROJECT_DIR$/.idea/bright.iml" />
     </modules>
   </component>
 </project>
