@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -19,7 +20,7 @@ import java.util.HashMap;
 public class Register extends AppCompatActivity {
 
 
-    EditText editTextUsername, editTextEmail, editTextPassword;
+    EditText editTextUsername, editTextPassword,editTextCld;
     RadioGroup radioGroupLevel;
 
     @Override
@@ -29,6 +30,7 @@ public class Register extends AppCompatActivity {
 
 
         editTextUsername = (EditText) findViewById(R.id.editTextUsername);
+        editTextCld = (EditText) findViewById(R.id.editTextCld);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         radioGroupLevel = (RadioGroup) findViewById(R.id.radioLevel);
 
@@ -45,14 +47,15 @@ public class Register extends AppCompatActivity {
     }
     private void registerUser() {
         final String username = editTextUsername.getText().toString().trim();
+        final String cld = editTextCld.getText().toString().trim();
 //        final String email = editTextEmail.getText().toString().trim();
         final String password = editTextPassword.getText().toString().trim();
         final String select = ((RadioButton) findViewById(radioGroupLevel.getCheckedRadioButtonId())).getText().toString();
 //        final String gender = ((RadioButton) findViewById(radioGroupGender.getCheckedRadioButtonId())).getText().toString();
         final String acc;
 
-        if(select.equals("Admin"))
-            acc= "0";
+        if(select.equals("CR"))
+            acc= "2";
         else acc = "1";
         //first we will do the validations
 
@@ -62,6 +65,11 @@ public class Register extends AppCompatActivity {
             return;
         }
 
+        if (TextUtils.isEmpty(cld)) {
+            editTextCld.setError("Please enter class division");
+            editTextCld.requestFocus();
+            return;
+        }
 //        if (TextUtils.isEmpty(email)) {
 //            editTextEmail.setError("Please enter your email");
 //            editTextEmail.requestFocus();
@@ -84,7 +92,7 @@ public class Register extends AppCompatActivity {
 
         class RegisterUser extends AsyncTask<Void, Void, String> {
 
-//            private ProgressBar progressBar;
+            private ProgressBar progressBar;
 
             @Override
             protected String doInBackground(Void... voids) {
@@ -96,6 +104,7 @@ public class Register extends AppCompatActivity {
                 params.put("username", username);
 //                params.put("email", email);
                 params.put("password", password);
+                params.put("cld", cld);
                 params.put("level", acc);
 
                 //returing the response
@@ -106,15 +115,15 @@ public class Register extends AppCompatActivity {
             protected void onPreExecute() {
                 super.onPreExecute();
                 //displaying the progress bar while user registers on the server
-//                progressBar = (ProgressBar) findViewById(R.id.progressBar);
-//                progressBar.setVisibility(View.VISIBLE);
+                progressBar = (ProgressBar) findViewById(R.id.progressBar);
+                progressBar.setVisibility(View.VISIBLE);
             }
 
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
                 //hiding the progressbar after completion
-//                progressBar.setVisibility(View.GONE);
+                progressBar.setVisibility(View.GONE);
 
                 try {
                     //converting response to json object
@@ -125,13 +134,14 @@ public class Register extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
 
                         //getting the user from the response
-                        JSONObject userJson = obj.getJSONObject("user");
+//                        JSONObject userJson = obj.getJSONObject("user");
 
                         //creating a new user object
-                        User user = new User(
-                                userJson.getString("username"),
-                                userJson.getInt("level")
-                        );
+//                        User user = new User(
+//                                userJson.getString("username"),
+//                                userJson.getString("cld"),
+//                                userJson.getInt("level")
+//                        );
 
                         //storing the user in shared preferences
 //                        SharedPrefManager.getInstance(getApplicationContext()).userLogin(user);

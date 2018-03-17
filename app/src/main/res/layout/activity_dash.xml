@@ -4,28 +4,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/clouds"
     tools:context="in.bright.avnish.Dash"
-    tools:layout_editor_absoluteY="81dp">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="204dp"
-        android:text="Dashboard"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:layout_editor_absoluteY="25dp">
 
 
     <Button
+        android:id="@+id/buttonAddFeeds"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="34dp"
+        android:background="@color/blue"
+        android:drawableLeft="@drawable/ic_edit"
+        android:text="ADD FEEDS"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comm" />
+
+    <Button
         android:id="@+id/buttonLogout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="101dp"
+        android:layout_width="373dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="7dp"
+        android:background="@color/blakishBlue"
         android:text="Logout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFeeds"
+        android:layout_width="250dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="80dp"
+        android:width="250dp"
+        android:height="50dp"
+        android:background="@color/blue"
+        android:drawableLeft="@drawable/ic_action_announc"
+        android:text="CR announcements"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNotes"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="34dp"
+        android:width="250dp"
+        android:height="50dp"
+        android:background="@color/green"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:text="Study Notes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFeeds" />
+
+
+    <Button
+        android:id="@+id/Events"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="34dp"
+        android:width="250dp"
+        android:height="50dp"
+        android:background="@color/colorYellow"
+        android:drawableLeft="@drawable/ic_action_events"
+        android:text="Upcoming Events"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNotes" />
+
+
+    <Button
+        android:id="@+id/comm"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="34dp"
+        android:width="250dp"
+        android:height="50dp"
+        android:background="@color/orange"
+        android:drawableLeft="@drawable/ic_action_committee"
+        android:text="College Committees"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Events" />
 
 </android.support.constraint.ConstraintLayout>

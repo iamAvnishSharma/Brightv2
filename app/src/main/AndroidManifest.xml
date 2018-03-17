@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/NoAction">
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
@@ -23,7 +23,9 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Dash" />
         <activity android:name=".Admin" />
-        <activity android:name=".Register"></activity>
+        <activity android:name=".Register" />
+        <activity android:name=".Feeds" />
+        <activity android:name=".AddFeeds"></activity>
     </application>
 
 </manifest>

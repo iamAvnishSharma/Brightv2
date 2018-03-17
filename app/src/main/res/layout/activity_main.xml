@@ -4,37 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bluegradientp"
     tools:context="in.bright.avnish.MainActivity"
-    tools:layout_editor_absoluteY="81dp">
+    tools:layout_editor_absoluteY="25dp">
 
     <EditText
         android:id="@+id/editTextUsername"
         android:layout_width="236dp"
-        android:layout_height="41dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
-        android:layout_marginBottom="19dp"
-        android:layout_marginTop="93dp"
-        android:background="@color/colorPurple"
+        android:layout_marginBottom="34dp"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
         android:hint="user id"
         android:inputType="textPersonName"
+        android:textColor="@color/blakishBlue"
         app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="232dp"
-        android:layout_height="36dp"
+        android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="117dp"
-        android:background="@color/colorPurple"
+        android:layout_marginBottom="71dp"
         android:drawableLeft="@drawable/ic_action_pwd"
         android:ems="10"
         android:hint="password"
         android:inputType="textPersonName"
+        android:textColor="@color/blakishBlue"
         app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,13 +42,14 @@
 
     <Button
         android:id="@+id/buttonLogin"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
+        android:layout_width="232dp"
+        android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="26dp"
-        android:background="@color/Pink"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button"
         android:text="Submit"
-        android:textColor="@color/blakishBlue"
+        android:textAlignment="center"
+        android:textColor="@color/pink"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,13 +61,33 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="48dp"
         android:text="For Registration Please contact the Administrator"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="51dp"
+        android:fontFamily="cursive"
+
+        android:text="Bright Board"
+        android:textAlignment="center"
+        android:textColor="@color/pearlwhite"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
