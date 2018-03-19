@@ -25,7 +25,12 @@
         <activity android:name=".Admin" />
         <activity android:name=".Register" />
         <activity android:name=".Feeds" />
-        <activity android:name=".AddFeeds"></activity>
+        <activity android:name=".AddFeeds" />
+        <activity android:name=".NotesStream" />
+        <activity android:name=".NotesMyear" />
+        <activity android:name=".NotesByear" />
+        <activity android:name=".NotesBranch" />
+        <activity android:name=".Notes"></activity>
     </application>
 
 </manifest>

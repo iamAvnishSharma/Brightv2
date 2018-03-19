@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clouds"
+    tools:context="in.bright.avnish.NotesBranch">
+
+    <Button
+        android:id="@+id/comp"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/button3"
+        android:text="Computer"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/it"
+        app:layout_constraintEnd_toStartOf="@+id/it"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/it" />
+
+    <Button
+        android:id="@+id/it"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/mech"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button3"
+        android:text="I.T."
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/mech"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/comp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/mech"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/comp"
+        android:layout_below="@+id/comp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button3"
+        android:text="Mechanicl"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/chem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/extc"
+        app:layout_constraintTop_toBottomOf="@+id/it" />
+
+    <Button
+        android:id="@+id/extc"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/chem"
+        android:layout_alignStart="@+id/it"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/button3"
+        android:text="EXTC"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mech"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chem"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/mech"
+        android:layout_below="@+id/mech"
+        android:layout_marginBottom="117dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button3"
+        android:text="Chemical"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/civil"
+        app:layout_constraintTop_toBottomOf="@+id/mech" />
+
+    <Button
+        android:id="@+id/civil"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/extc"
+        android:layout_alignTop="@+id/chem"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/button3"
+        android:text="Civil"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/chem"
+        app:layout_constraintEnd_toStartOf="@+id/chem"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:background="@color/darkgreen1"
+        android:drawableLeft="@drawable/ic_action_folder"
+        android:text=" Folders"
+        android:textColor="@color/lightgreen"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/it"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
