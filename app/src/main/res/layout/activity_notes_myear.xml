@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/clouds"
-    tools:context="in.bright.avnish.Main3Activity">
+    tools:context="in.bright.avnish.NotesMyear">
 
     <Button
         android:id="@+id/first"

@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/clouds"
-    tools:context="in.bright.avnish.Main5Activity">
+    tools:context="in.bright.avnish.NotesBranch">
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/comp"
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_alignStart="@+id/textView2"
@@ -19,16 +19,16 @@
         android:text="Computer"
         android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button14"
-        app:layout_constraintEnd_toStartOf="@+id/button14"
+        app:layout_constraintBottom_toBottomOf="@+id/it"
+        app:layout_constraintEnd_toStartOf="@+id/it"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button14" />
+        app:layout_constraintTop_toTopOf="@+id/it" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/it"
         android:layout_width="150dp"
         android:layout_height="70dp"
-        android:layout_above="@+id/button15"
+        android:layout_above="@+id/mech"
         android:layout_alignEnd="@+id/textView2"
         android:layout_marginBottom="30dp"
         android:layout_marginEnd="30dp"
@@ -36,34 +36,34 @@
         android:text="I.T."
         android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/button15"
+        app:layout_constraintBottom_toTopOf="@+id/mech"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button13"
+        app:layout_constraintStart_toEndOf="@+id/comp"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/mech"
         android:layout_width="150dp"
         android:layout_height="70dp"
-        android:layout_alignStart="@+id/button13"
-        android:layout_below="@+id/button13"
+        android:layout_alignStart="@+id/comp"
+        android:layout_below="@+id/comp"
         android:layout_marginBottom="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/button3"
         android:text="Mechanicl"
         android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/button17"
+        app:layout_constraintBottom_toTopOf="@+id/chem"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button16"
-        app:layout_constraintTop_toBottomOf="@+id/button14" />
+        app:layout_constraintStart_toEndOf="@+id/extc"
+        app:layout_constraintTop_toBottomOf="@+id/it" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/extc"
         android:layout_width="150dp"
         android:layout_height="70dp"
-        android:layout_above="@+id/button17"
-        android:layout_alignStart="@+id/button14"
+        android:layout_above="@+id/chem"
+        android:layout_alignStart="@+id/it"
         android:layout_marginEnd="60dp"
         android:layout_marginStart="30dp"
         android:background="@drawable/button3"
@@ -71,16 +71,16 @@
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button15"
+        app:layout_constraintEnd_toStartOf="@+id/mech"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/chem"
         android:layout_width="150dp"
         android:layout_height="70dp"
-        android:layout_alignStart="@+id/button15"
-        android:layout_below="@+id/button15"
+        android:layout_alignStart="@+id/mech"
+        android:layout_below="@+id/mech"
         android:layout_marginBottom="117dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/button3"
@@ -89,23 +89,23 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button18"
-        app:layout_constraintTop_toBottomOf="@+id/button15" />
+        app:layout_constraintStart_toEndOf="@+id/civil"
+        app:layout_constraintTop_toBottomOf="@+id/mech" />
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/civil"
         android:layout_width="150dp"
         android:layout_height="70dp"
-        android:layout_alignStart="@+id/button16"
-        android:layout_alignTop="@+id/button17"
+        android:layout_alignStart="@+id/extc"
+        android:layout_alignTop="@+id/chem"
         android:layout_marginEnd="60dp"
         android:layout_marginStart="30dp"
         android:background="@drawable/button3"
         android:text="Civil"
         android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button17"
-        app:layout_constraintEnd_toStartOf="@+id/button17"
+        app:layout_constraintBaseline_toBaselineOf="@+id/chem"
+        app:layout_constraintEnd_toStartOf="@+id/chem"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -120,7 +120,7 @@
         android:text=" Folders"
         android:textColor="@color/lightgreen"
         android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/button14"
+        app:layout_constraintBottom_toTopOf="@+id/it"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

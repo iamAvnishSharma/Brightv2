@@ -21,6 +21,14 @@ public class Dash extends AppCompatActivity {
         }
 
 
+        findViewById(R.id.buttonNotes).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(getApplicationContext(), NotesByear.class));
+            }
+        });
+
         findViewById(R.id.buttonFeeds).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,11 +47,13 @@ public class Dash extends AppCompatActivity {
             }
         });
 
+
         User user = SharedPrefManager.getInstance(getApplicationContext()).getUser();
         if(user.getLevel()==2)
         {
             addf.setVisibility(View.VISIBLE); //SHOW the button
         }
+
 
 
         findViewById(R.id.buttonLogout).setOnClickListener(new View.OnClickListener() {

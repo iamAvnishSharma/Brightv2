@@ -26,10 +26,11 @@
         <activity android:name=".Register" />
         <activity android:name=".Feeds" />
         <activity android:name=".AddFeeds" />
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".Main3Activity" />
-        <activity android:name=".Main4Activity" />
-        <activity android:name=".Main5Activity"></activity>
+        <activity android:name=".NotesStream" />
+        <activity android:name=".NotesMyear" />
+        <activity android:name=".NotesByear" />
+        <activity android:name=".NotesBranch" />
+        <activity android:name=".Notes"></activity>
     </application>
 
 </manifest>
