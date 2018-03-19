@@ -29,6 +29,22 @@ public class Dash extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.Events).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(getApplicationContext(), Events.class));
+            }
+        });
+
+        findViewById(R.id.comm).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(getApplicationContext(), Comm.class));
+            }
+        });
+
         findViewById(R.id.buttonFeeds).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

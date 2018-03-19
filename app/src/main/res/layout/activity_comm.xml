@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.bright.avnish.Comm"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/comm1" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/comm2" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/comm3" />
+        </GridLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
