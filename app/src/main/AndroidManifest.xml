@@ -25,7 +25,11 @@
         <activity android:name=".Admin" />
         <activity android:name=".Register" />
         <activity android:name=".Feeds" />
-        <activity android:name=".AddFeeds"></activity>
+        <activity android:name=".AddFeeds" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".Main4Activity" />
+        <activity android:name=".Main5Activity"></activity>
     </application>
 
 </manifest>
