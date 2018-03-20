@@ -32,7 +32,9 @@
         <activity android:name=".NotesBranch" />
         <activity android:name=".Notes" />
         <activity android:name=".Events" />
-        <activity android:name=".Comm"></activity>
+        <activity android:name=".Comm" />
+        <activity android:name=".EventDesc" />
+        <activity android:name=".CommDesc"></activity>
     </application>
 
 </manifest>

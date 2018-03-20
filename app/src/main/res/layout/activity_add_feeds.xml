@@ -14,8 +14,7 @@
         android:layout_width="384dp"
         android:layout_height="226dp"
         android:layout_marginTop="23dp"
-        android:hint="please put date-time then the message.
-        Type here."
+        android:hint="please put date-time then the message.\n Type here."
         android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
