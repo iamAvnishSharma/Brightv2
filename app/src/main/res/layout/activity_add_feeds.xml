@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/clouds"
+    android:background="@drawable/cranc"
     tools:context="in.bright.avnish.AddFeeds"
     tools:layout_editor_absoluteY="25dp">
 
@@ -13,11 +13,13 @@
         android:id="@+id/editTextFeed"
         android:layout_width="384dp"
         android:layout_height="226dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="104dp"
         android:hint="please put date-time then the message.\n Type here."
-        android:inputType="text"
+        android:inputType="textMultiLine"
         android:textAlignment="center"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,7 +28,7 @@
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="384dp"
-        android:layout_height="20dp"
+        android:layout_height="14dp"
         android:layout_marginBottom="75dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonAdd"
         app:layout_constraintEnd_toEndOf="parent"

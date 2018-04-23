@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "395857553049",
+    "firebase_url": "https://brightv2-1.firebaseio.com",
+    "project_id": "brightv2-1",
+    "storage_bucket": "brightv2-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395857553049:android:9878c10b745a5ff6",
+        "android_client_info": {
+          "package_name": "in.bright.avnish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395857553049-sn9jeseuivsplmekavpopt42kuhibuit.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.bright.avnish",
+            "certificate_hash": "f18200d77c3daef9074f10705c2d72e658075e87"
+          }
+        },
+        {
+          "client_id": "395857553049-q643384pilvcfn9hk15oc9v3n3k66app.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPVNPbN396KfLsZ3jbmWPY6X16mHqoz1Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395857553049-q643384pilvcfn9hk15oc9v3n3k66app.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

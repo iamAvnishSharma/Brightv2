@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Bright Board</string>
     <string name="title_activity_feeds">Feeds</string>
+
+
+    <string name="feed">FEEDS</string>
+    <string name="notes">NOTES</string>
+    <string name="event">EVENTS</string>
+    <string name="chap">COMMITTEES</string>
+    <string name="out">LOGOUT</string>
+
+
 </resources>

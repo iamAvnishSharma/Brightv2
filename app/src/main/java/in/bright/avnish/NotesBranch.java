@@ -9,17 +9,41 @@ import android.view.View;
 import android.widget.VideoView;
 
 public class NotesBranch extends AppCompatActivity {
-VideoView v1;
+
+    int s;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notes_branch);
 
+
+        Intent i=getIntent();
+        s = (int) i.getExtras().get("S");
+
         findViewById(R.id.comp).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(), Notes.class));
+                if(s==1)
+                {
+                    Intent browserIntent = new Intent(
+                            Intent.ACTION_VIEW,
+                            Uri.parse("https://drive.google.com/drive/u/0/folders/1lB690ewfWW5gcscv3b8cVxqQGbOkLj0W"));
+                    startActivity(browserIntent);
+                }
+                else if(s==2)
+                {
+                    Intent browserIntent = new Intent(
+                            Intent.ACTION_VIEW,
+                            Uri.parse("https://drive.google.com/drive/u/0/folders/0B-V3wT1S5beASlNuenBKN1NfczA"));
+                    startActivity(browserIntent);
+
+                }
+                else
+                {
+                    startActivity(new Intent(getApplicationContext(), Notes.class));
+                }
+
             }
         });
 
@@ -27,7 +51,25 @@ VideoView v1;
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(), Notes.class));
+                if(s==1)
+                {
+                    Intent browserIntent = new Intent(
+                            Intent.ACTION_VIEW,
+                            Uri.parse("https://drive.google.com/drive/u/0/folders/1lB690ewfWW5gcscv3b8cVxqQGbOkLj0W"));
+                    startActivity(browserIntent);
+                }
+                else if(s==2)
+                {
+                    Intent browserIntent = new Intent(
+                            Intent.ACTION_VIEW,
+                            Uri.parse("https://drive.google.com/drive/u/0/folders/0B-V3wT1S5beASlNuenBKN1NfczA"));
+                    startActivity(browserIntent);
+
+                }
+                else
+                {
+                    startActivity(new Intent(getApplicationContext(), Notes.class));
+                }
             }
         });
 
@@ -59,19 +101,23 @@ VideoView v1;
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(), Notes.class));
+                if(s==1)
+                {
+                    Intent browserIntent = new Intent(
+                            Intent.ACTION_VIEW,
+                            Uri.parse("https://drive.google.com/drive/u/0/folders/1uO2A525TF5jQc-RFgkmD2chAV7mBj2V2"));
+                    startActivity(browserIntent);
+
+                }
+                else
+                {
+                    startActivity(new Intent(getApplicationContext(), Notes.class));
+                }
+
             }
         });
-        v1=(VideoView)findViewById(R.id.videoView);
-        Uri u= Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.bg);
-        v1.setVideoURI(u);
-        v1.start();
-        v1.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mediaPlayer) {
-                mediaPlayer.setLooping(true);
-            }
-        });
+
+
 
     }
 }

@@ -9,17 +9,25 @@ import android.view.View;
 import android.widget.VideoView;
 
 public class NotesMyear extends AppCompatActivity {
-VideoView v1;
+
+    int s;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notes_myear);
 
+        Intent i=getIntent();
+        s = (int) i.getExtras().get("S");
+
         findViewById(R.id.first).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(), NotesBranch.class));
+                Intent browserIntent = new Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://drive.google.com/drive/u/0/folders/0B-V3wT1S5beAeGh4MFJ4YzdLUFE"));
+                startActivity(browserIntent);
             }
         });
 
@@ -27,7 +35,9 @@ VideoView v1;
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(), NotesBranch.class));
+                Intent i=new Intent(getApplicationContext(),NotesBranch.class);
+                i.putExtra("S",s);
+                startActivity(i);
             }
         });
 
@@ -35,7 +45,7 @@ VideoView v1;
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(), NotesBranch.class));
+                startActivity(new Intent(getApplicationContext(), Notes.class));
             }
         });
 
@@ -43,7 +53,7 @@ VideoView v1;
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(), NotesBranch.class));
+                startActivity(new Intent(getApplicationContext(), Notes.class));
             }
         });
 
@@ -51,24 +61,20 @@ VideoView v1;
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(), NotesBranch.class));
+                startActivity(new Intent(getApplicationContext(), Notes.class));
             }
         });
 
-        v1=(VideoView)findViewById(R.id.videoView_myear);
-        Uri u= Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.bg);
-        v1.setVideoURI(u);
-        v1.start();
-        v1.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mediaPlayer) {
-                mediaPlayer.setLooping(true);
-            }
-        });
-
-
-
-
-
+//        v1=(VideoView)findViewById(R.id.videoView_myear);
+//        Uri u= Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.bg);
+//        v1.setVideoURI(u);
+//        v1.start();
+//        v1.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+//            @Override
+//            public void onPrepared(MediaPlayer mediaPlayer) {
+//                mediaPlayer.setLooping(true);
+//            }
+//        });
+//
     }
 }

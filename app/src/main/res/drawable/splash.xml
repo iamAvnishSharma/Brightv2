@@ -4,8 +4,9 @@
     <item android:drawable="@color/white" />
 
     <item>
-        <bitmap android:src="@drawable/finallogo"
-            android:gravity="center" />
+        <bitmap android:src="@drawable/logg"
+            android:gravity="center"
+            />
 
     </item>
 

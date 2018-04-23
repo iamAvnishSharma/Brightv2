@@ -4,17 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/clouds"
-    tools:context="in.bright.avnish.NotesMyear">
+    android:background="@drawable/notesbg"
+    tools:context="in.bright.avnish.NotesMyear"
+    tools:layout_editor_absoluteY="25dp">
 
-    <VideoView
-        android:id="@+id/videoView_myear"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/first"
@@ -22,16 +15,16 @@
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginStart="92dp"
         android:background="@drawable/button4"
         android:text="1st year"
+        android:textColor="@color/black"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/second"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/second"
@@ -39,15 +32,16 @@
         android:layout_height="50dp"
         android:layout_alignStart="@+id/first"
         android:layout_below="@+id/first"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginStart="92dp"
         android:background="@drawable/button4"
         android:text="2nd year"
+        android:textColor="@color/black"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/third"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/first" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/third"
@@ -55,15 +49,16 @@
         android:layout_height="50dp"
         android:layout_alignStart="@+id/second"
         android:layout_below="@+id/second"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginStart="92dp"
         android:background="@drawable/button4"
         android:text="3rd year"
+        android:textColor="@color/black"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/fourth"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/second" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/fourth"
@@ -71,15 +66,16 @@
         android:layout_height="50dp"
         android:layout_alignStart="@+id/third"
         android:layout_below="@+id/third"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginStart="92dp"
         android:background="@drawable/button4"
         android:text="4th year"
+        android:textColor="@color/black"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/fifth"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/third" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/fifth"
@@ -87,15 +83,16 @@
         android:layout_height="50dp"
         android:layout_alignStart="@+id/fourth"
         android:layout_below="@+id/fourth"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginStart="92dp"
         android:background="@drawable/button4"
         android:text="5th year"
+        android:textColor="@color/black"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fourth" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

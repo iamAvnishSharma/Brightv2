@@ -40,7 +40,7 @@ public class AddFeeds extends AppCompatActivity {
         final String feed = editTextFeed.getText().toString();
 
         if (TextUtils.isEmpty(feed)) {
-            editTextFeed.setError("Please enter username");
+            editTextFeed.setError("Please enter message");
             editTextFeed.requestFocus();
             return;
         }

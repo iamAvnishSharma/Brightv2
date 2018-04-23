@@ -17,7 +17,7 @@ public class Dash extends AppCompatActivity {
 
         if (!SharedPrefManager.getInstance(this).isLoggedIn()) {
             finish();
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, Login.class));
         }
 
 
@@ -25,7 +25,7 @@ public class Dash extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(), NotesByear.class));
+                startActivity(new Intent(getApplicationContext(), NotesStream.class));
             }
         });
 

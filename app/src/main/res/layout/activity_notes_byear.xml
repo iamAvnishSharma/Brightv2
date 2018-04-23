@@ -4,17 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/clouds"
+    android:background="@drawable/notesbg"
     tools:context="in.bright.avnish.NotesByear">
 
-    <VideoView
-        android:id="@+id/videoViewbyear"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/first"
         android:layout_width="200dp"
